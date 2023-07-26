@@ -1,0 +1,369 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Contenido de la web*/
+body {
+	font-family: 'Tahoma', sans-serif;
+
+}
+
+p {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+section {
+	padding-top: 70px;
+	width: 100%;
+
+}
+
+/* ... código anterior ... */
+
+/* Modificaciones para el artículo */
+.article {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(11deg, blue, #5ed9ff);
+}
+
+article {
+    margin: auto;
+    width: 80%;
+}
+
+.perfil {
+    width: 250px;
+    margin: 20px; /* Ajustamos el margen aquí para mover la foto de perfil */
+    float: left; /* Alineamos la foto de perfil a la izquierda */
+    shape-outside: circle(); /* Agregamos esto para darle forma circular a la imagen */
+}
+
+.foto-perfil {
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    /* Establecemos un borde transparente para que el arcoíris sea visible */
+    background: #ffe100;
+    /* Color de fondo de respaldo en caso de que la imagen no se cargue */
+
+    /* Degradado para navegadores modernos */
+    background-image: linear-gradient(13deg, #898509, #ebff66);
+    background-blend-mode: overlay;
+    /* Combinar el degradado con la imagen de fondo */
+}
+
+.contenido-article {
+    text-align: right; /* Alineamos el contenido del artículo a la derecha */
+}
+
+/* Estilo para el contenido del artículo */
+.contenido-article h1 {
+    text-transform: uppercase;
+    font-family: Tahoma;
+    font-size: 48px;
+    color: goldenrod;
+    padding-bottom: 20px;
+}
+
+.contenido-article p {
+    font-family: 'Tahoma';
+    color: goldenrod;
+    padding-bottom: 60px;
+}
+
+/* ... el resto del código sigue igual ... */
+
+
+article h1 {
+	text-transform: uppercase;
+	font-family: Tahoma;
+	font-size: 48px;
+	color: goldenrod;
+	padding-bottom: 20px;
+}
+
+article p {
+	font-family: 'Tahoma';
+	color: goldenrod;
+	padding-bottom: 60px;
+}
+
+/*Configurando Aside*/
+.aside {
+	width: 100%;
+}
+
+.contenido {
+	width: 80%;
+	margin: auto;
+}
+
+aside {
+	padding-top: 80px;
+	width: 60%;
+	text-align: justify;
+}
+
+aside h2 {
+	font-family: 'Tahoma';
+	font-size: 30px;
+	color: #101010;
+	margin-bottom: 10px;
+}
+
+aside hr {
+	width: 60%;
+	border: 2px solid #101010;
+	margin-bottom: 15px;
+}
+
+aside p {
+	font-family: 'Tahoma';
+	color: #101010;
+	margin-bottom: 10px;
+}
+
+
+
+
+/*configurando servicios*/
+
+.section2 {
+	width: 100%;
+}
+
+.fondo {
+	margin: 0;
+	background: url(../img/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+
+}
+
+.fondo img {
+	width: 100%;
+	height: 100%;
+	display: block;
+
+}
+
+aside h4 {
+	color: #fff;
+	text-align: center;
+}
+
+
+.servicio {
+	background: rgba(0, 21, 255, 0.364);
+	width: 100%;
+	height: 100%;
+	padding: 100px 0px;
+}
+
+.servicio h2 {
+	text-align: center;
+	color: rgb(69, 230, 235);
+	padding: 10px;
+	font-family: 'helvetica';
+}
+
+.servicio hr {
+	width: 30%;
+	border: 1px solid rgb(69, 230, 235);
+
+}
+
+
+.cont-servicio {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.iconozzz {
+	color: #f7ff5c;
+	width: 20px;
+}
+
+.cont-iconos {
+	width: 250px;
+	margin: 15px;
+
+}
+
+.cont-iconos h3 {
+	padding: 5px;
+	color: #15d4fe;
+	text-align: center;
+}
+
+.cont-iconos p {
+	color: #ffffff;
+	text-align: center;
+
+}
+
+.contenedor {
+
+	text-align: center;
+}
+
+footer {
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background: linear-gradient(11deg, #0c6d9e, #83d4ff);
+	color: gold;
+	font-weight: bold;
+}
+
+.footer {
+	text-align: left;
+	width: 320px;
+}
+
+.div-imagen {
+	width: 50%;
+}
+
+/*Media Querie*/
+
+@media (max-width:991px) {
+
+	article p {
+		display: none;
+	}
+
+	.contenido {
+		width: 90%;
+	}
+
+	aside {
+		padding: 80px;
+		width: 80%;
+	}
+
+	.cont-iconos {
+		padding: 40px 0 40px 0;
+		margin: 20px 20px;
+
+	}
+
+	.div-imagen {
+		width: 50%
+	}
+
+}
+
+@media (max-width:768px) {
+
+	.contenido {
+		width: 95%;
+	}
+
+	aside {
+		width: 100%;
+	}
+
+	.cont-iconos {
+
+
+		padding: 5px 0 5px 0;
+		margin: 20px 10px;
+	}
+
+	footer {
+		clear: both;
+	}
+
+}
+
+@media (max-width:500px) {
+	.perfil {
+		width: 70%;
+		margin: auto;
+	}
+
+	.foto-perfil {
+		width: 100%;
+	}
+
+	.contenido {
+		width: 100%;
+	}
+
+	input[type="submit"] {
+		border: 0;
+		font-size: 10px;
+		width: 100%;
+
+	}
+
+	.section2 {
+		width: 100%;
+	}
+
+
+
+	.cont-iconos {
+		width: 40%;
+		padding-top: 20px;
+		margin-top: 20px;
+
+	}
+
+	.iconozzz {
+		align-content: center;
+		font-size: 30px;
+	}
+
+	.cont-iconos h3 {
+		font-size: 20px;
+	}
+
+	.cont-iconos p {
+		display: none;
+	}
+}
+
+@media (max-width:400px) {
+	aside {
+		text-align: center;
+	}
+
+	aside p {
+		text-align: justify;
+	}
+
+	aside hr {
+		width: 100%;
+	}
+
+	.perfil {
+		margin-right: 45px;
+	}
+
+	.cont-iconos {
+		width: 100%;
+		padding: 0px;
+	}
+
+	.footer {
+		text-align: center;
+	}
+
+	.div-imagen {
+		width: 50%
+	}
+
+}
